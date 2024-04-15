@@ -141,12 +141,40 @@
             font-weight: 500;
             border: none;
         }
+
+        .home {
+            height: 33px;
+            width: 70px;
+            background-color: #1A76D1;
+            border-radius: 5px;
+            border-style: none;
+            color: #fff;
+            font: 'Poppins', sans-serif; 
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .home1 {
+            height: 33px;
+            width: 90px;
+            background-color: #1A76D1;
+            border-radius: 5px;
+            border-style: none;
+            color: #fff;
+            font: 'Poppins', sans-serif; 
+            font-weight: 600;
+            font-size: 15px;
+        }
         
     </style>
 </head>
 <body>
     <div class="container">
-    <a style="color:blue;" href="https://nodejs-production-b4eb.up.railway.app/">Home</a>
+    <a href="https://nodejs-production-b4eb.up.railway.app/">
+            <button class="home">Home</button>
+        </a>
+
+            <button class="home1" onclick="history.back()">Go Back</button>
     <h1>Edit Patient Details</h1>
     <div id="oldDetails">
         <!-- Old patient details will be displayed here -->
