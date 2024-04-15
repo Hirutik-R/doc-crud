@@ -220,13 +220,13 @@
             }
 
             let html = '<h2>Patient Details</h2>';
-            html += `<p>Name : ${data.name}</p>`;
-            html += `<p>Phone Number : ${data.phone_number}</p>`;
-            html += `<p>Age : ${data.age}</p>`;
-            html += `<p>Gender : ${data.gender}</p>`;
-            html += `<p>Consultation : ${data.consultation}</p>`;
-            html += `<p>Input Image : <img src="./uploads/319.png" alt="imagei"></p>`;             
-            html += `<p>Output Image : <img src="./uploads/tumor.png" alt="imageo"></p>`;
+            html += `<p><span style="font-weight: bold;">Name :</span> ${data.name}</p>`;
+            html += `<p><span style="font-weight: bold;">Phone Number :</span> ${data.phone_number}</p>`;
+            html += `<p><span style="font-weight: bold;">Age :</span> ${data.age}</p>`;
+            html += `<p><span style="font-weight: bold;">Gender :</span> ${data.gender}</p>`;
+            html += `<p><span style="font-weight: bold;">Consultation :</span> ${data.consultation}</p>`;
+            html += `<p><span style="font-weight: bold;">Input Image :</span> <img style="height: 90px; width: 90px; padding-left:50px;" src="https://res.cloudinary.com/dkyur0ade/image/upload/v1713175994/319_il7kir.png" alt="imagei"></p>`;             
+            html += `<p><span style="font-weight: bold;">Output Image :</span> <img style="height: 90px; width: 90px; padding-left:38px;" src="https://res.cloudinary.com/dkyur0ade/image/upload/v1713175995/tumor_mz9tba.png" alt="imageo"></p>`;
 
             // Pass patient ID to edit, delete, and add functions
             html += `<button onclick="editPatient('${data._id}')">Edit</button>`;
